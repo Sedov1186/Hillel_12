@@ -1,32 +1,30 @@
 class Auto:
-
-    def __init__(self, brand, age, mark):
-
+    def __init__(self, brand, age, mark, color='', weight=''):
         self.brand = brand
-
         self.age = age
-
+        self.color = color
         self.mark = mark
-
+        self.weight = weight
 
     def move(self):
-
-        print('Выводят сообщение на экран move')
-
-    def stop(self):
-
-        print('Выводят сообщение на экран stop')
+        print("move")
 
     def birthday(self):
-
         self.age += 1
 
-        print(f'Age {self.age}')
+    def stop(self):
+        print("stop")
 
-auto_1 = Auto(brand="Tesla", age=1, mark=3)
+if __name__ == "__main__":
+    my_auto = Auto(brand="Tesla", age=1, mark="3", color="Red", weight="1500 kg")
 
-auto_1.move()
+    print(f"Brand: {my_auto.brand}")
+    print(f"Age: {my_auto.age}")
+    print(f"Color: {my_auto.color}")
+    print(f"Mark: {my_auto.mark}")
 
-auto_1.stop()
 
-auto_1.birthday()
+    my_auto.move()
+    my_auto.birthday()
+    print(f"New age after birthday: {my_auto.age}")
+    my_auto.stop()
