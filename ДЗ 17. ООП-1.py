@@ -7,16 +7,16 @@ class Auto:
         self.weight = weight
 
     def move(self):
-        print("move")
+        print('move')
 
     def birthday(self):
         self.age += 1
 
     def stop(self):
-        print("stop")
+        print('stop')
 
-if __name__ == "__main__":
-    my_auto = Auto(brand="Tesla", age=1, mark="3", color="Red", weight="1500 kg")
+if __name__ == '__main__':
+    my_auto = Auto(brand='Tesla', age=1, mark='3', color='Red', weight='1741 kg')
 
     print(f"Brand: {my_auto.brand}")
     print(f"Age: {my_auto.age}")
